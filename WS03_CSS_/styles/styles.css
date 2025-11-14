@@ -1,0 +1,79 @@
+ p {
+      color: rgb(51, 51, 169);
+    }
+    h1 {
+      font-size: 2em;
+    }
+    div {
+      padding: 20px;
+      margin: 10px;
+    }
+body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: rgb(193, 143, 144);
+    }
+    
+    h1 {
+      color: #333;
+    }.transition-button {
+        background-color: rgb(211, 107, 164);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      } 
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+.animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(172, 121, 201);
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+      .pseudo-list li:nth-child(odd) {
+        background-color: rgb(210, 172, 172);
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(227, 137, 186);
+      }
+     
+
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: rgb(177, 118, 118);
+      }
+
+
+
+
