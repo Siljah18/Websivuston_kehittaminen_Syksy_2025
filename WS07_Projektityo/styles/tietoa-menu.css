@@ -1,0 +1,26 @@
+.tietoa-page {
+  background-color: #bdae63;
+}
+
+.tietoa-page .card-body {
+  background-color: #e19f6f;
+}
+
+.tietoa-page h1 {
+  margin-top: 40px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: rgb(190, 151, 124);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tietoa meistä - Coffee's</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/tietoa-menu.css">
+
+  </head>
+
+<body class="tietoa-page">
+ 
+    <a href="index.html">← Takaisin etusivulle</a>
+    <ul class="navbar-nav flex-row">
+     <li class="nav-item me-4">
+    <a class="navbar-brand me-4" href="#">Coffee's</a>
+</li>
+</ul>
+  <h1>Tietoa meistä</h1>
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tervetuloa Coffee's kahvilaan!</h5>
+            <p class="card-text">Coffee's on perustettu vuonna 2020 intohimosta tarjota asiakkaillemme parasta kahvikokemusta. Meillä on laaja valikoima erikoiskahveja, ja viihtyisä ilmapiiri, jossa voit rentoutua tai työskennellä.</p>
+            <p class="card-text">Meidän tiimimme koostuu kokeneista baristoista, jotka ovat sitoutuneet tarjoamaan erinomaista palvelua ja laadukkaita juomia. Käytämme vain parhaita raaka-aineita ja panostamme kestävään kehitykseen yhteistyössä paikallisten toimittajien kanssa.</p>
+            <p class="card-text">Tule käymään ja koe Coffee'sin ainutlaatuinen tunnelma!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="container mt-5">
+ 
+<div class="row justify-content-center g-4 mb-5">
+ 
+ 
+  <div class="col-md-4">
+ <div class="card">
+      <img src="images/barista.png" class="card-img-top" alt="Barista">
+      <div class="card-body">
+        <h5 class="card-title">Työpaikat</h5>
+        <p class="card-text">Tule meille töihin! Meillä on joukko osaavia ja motivoituneita työntekijöitä, Liity osaksi huipputiimiämme! </p>
+        <button id="applyJobBtn" class="btn btn-primary">Lisää</button>
+        <p id="jobInfo" style="display:none;">Lähetä hakemus sähköpostiin osoitteeseen coffees@coffee.com</p>
+      </div>
+    </div>
+  </div>
+<script>
+  function toggleText(applyJobBtn, jobInfo) {
+    const btn = document.getElementById(applyJobBtn);
+    const text = document.getElementById(jobInfo);
+    btn.addEventListener('click', () => {
+      if (text.style.display === 'none') {
+        text.style.display = 'block';
+        btn.textContent = 'Piilota';
+      } else {
+        text.style.display = 'none';
+        btn.textContent = 'Lisää';
+      }
+    });
+  } 
+ toggleText('applyJobBtn', 'jobInfo');
+
+ 
+
+
+</script>
+
+ 
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Vastuullisuus</h5>
+            <p class="card-text"></p>
+            <p class="card-text">Keskitymme siihen, että kaikki käyttämämme materiaalit ovat peräisin eettisistä ja ympäristöä kunnioittavista lähteistä. Panostamme energiatehokkuuteen, hiilijalanjäljen pienentämiseen ja kiertotalouteen.</p>
+            <p class="card-text">Sitoudumme vastuullisuuteen raaka-aine -hankinnoissamme. Käytämme uudelleen kätettäviä materiaaleja ja uusiutuvia raaka-aineita aina kun se on mahdollista. Päivitämme toimintatapojamme vastaamaan uusimpia vastuullisuusstandardeja</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container mt-4">
+   <div class="row justify-content-center">
+
+    <div class="col-md-8">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Kahvimme</h5>
+    
+            <p class="card-text">Kahvimme tulee suoraan Etiopian pelloilta. Pavut kerätään käsin ja paahdetaan pienissä erissä, jotta kahvi säilyy aromisena.</p>
+            <p class="card-text">Olemme suunnitelleet kahvimme kuljetuksen niin, että kahvisi on aina mahdollisimman tuore kupissa! Paahdamme kahvin niin, että pavut kehittyvät makuun, joka korostaa niiden luonnollisia vivahteita.</p>
+            <p class="card-text">Tavoitteemme on tehdä kahvihetkestä elämys, joka herättää aistit ja tuo iloa jokaisen päivään.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>   
+</html>

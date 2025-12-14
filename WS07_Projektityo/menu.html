@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Coffee's</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/tietoa-menu.css">
+  <style>
+    .card {
+      min-height: 350px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+    .card-body p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+ <a href="index.html">← Takaisin etusivulle</a>
+    <ul class="navbar-nav flex-row">
+     <li class="nav-item me-4">
+    <a class="navbar-brand me-4" href="#">Coffee's</a>
+</li>
+</ul>
+<h6 class="mt-6">Gluteeniton (G), Laktoositon (L)</h6>
+<h1 class="text-center mt-3">Menu</h1>
+
+<div class="container mt-4">
+  <div class="row g-4">
+
+   <!-- Caffe Latte -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/caffelatte.png" class="card-img-top" alt="Caffe Latte">
+        <div class="card-body text-center">
+          <h5 class="card-title">Caffe Latte</h5>
+          <p class="card-text">(G)</p>
+          <button id="showCaffeBtn" class="btn btn-primary">Learn More</button>
+          <p id="caffeInfo" style="display:none;">Caffe Latte on italiainen maitokahvi, joka on yhdistelmä espressoa ja höyrytettyä maitoa.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Espresso -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/espresso.png" class="card-img-top" alt="Espresso">
+        <div class="card-body text-center">
+          <h5 class="card-title">Espresso</h5>
+          <p class="card-text">(L), (G).</p>
+          <button id="showEspressoBtn" class="btn btn-primary">Learn More</button>
+          <p id="espressoInfo" style="display:none;">Espresso on vahva, tiivistetty kahvijuoma, joka on valmistettu nopeasti kuumalla vedellä.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frappucino -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/frappucino.png" class="card-img-top" alt="Frappucino">
+        <div class="card-body text-center">
+          <h5 class="card-title">Frappucino</h5>
+          <p class="card-text">(VL)</p>
+          <button id="showFrappuBtn" class="btn btn-primary">Learn More</button>
+          <p id="frappuInfo" style="display:none;">Frappucino on kylmä, kermainen ja makea kahvijuoma jäillä ja maidolla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Caffe Mocha -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/caffemocha.png" class="card-img-top" alt="Caffe Mocha">
+        <div class="card-body text-center">
+          <h5 class="card-title">Caffe Mocha</h5>
+          <p class="card-text">(G)</p>
+          <button id="showMochaBtn" class="btn btn-primary">Learn More</button>
+          <p id="mochaInfo" style="display:none;">Caffe Mocha on yhdistelmä espressoa, kaakaota ja höyrytettyä maitoa. Sopii makean ystäville.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cappucino -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/cappucino.png" class="card-img-top" alt="Cappucino">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cappucino</h5>
+          <p class="card-text">(G).</p>
+          <button id="showCappBtn" class="btn btn-primary">Learn More</button>
+          <p id="cappInfo" style="display:none;">Cappucino on espressoon perustuva italialainen kahvijuoma, johon on lisätty maitoa ja vaahtoa.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matcha Latte -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/matchalatte.png" class="card-img-top" alt="Matcha Latte">
+        <div class="card-body text-center">
+          <h5 class="card-title">Matcha Latte</h5>
+          <p class="card-text">(G)</p>
+          <button id="showMatchaBtn" class="btn btn-primary">Learn More</button>
+          <p id="matchaInfo" style="display:none;">Matcha Latte on japanilainen vihreä tee -juoma, johon lisätään maitoa. Se valmistetaan teelajista nimeltä Tencha.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Caramel Latte -->
+     <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/caramellatte.png" class="card-img-top" alt="Caramel Latte">
+        <div class="card-body text-center">
+          <h5 class="card-title">Caramel Latte</h5>
+          <p class="card-text">(G)</p>
+          <button id="showCaramelBtn" class="btn btn-primary">Learn More</button>
+          <p id="caramelInfo" style="display:none;">Caramel Latte on espressoon perustuva juoma, johon lisätään karamellisiirappia ja kermavaahtoa.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Chai Latte -->
+     <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <img src="images/chailatte.png" class="card-img-top" alt="Chai Latte">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chai Latte</h5>
+          <p class="card-text">(G), (L)</p>
+          <button id="showChaiBtn" class="btn btn-primary">Learn More</button>
+          <p id="chaiInfo" style="display:none;">Chai Latte on intialainen juoma, jonka pohjana on musta tee, johon lisätään maitoa, kardemummaa ja inkivääriä sekä makeutuksena käytetään sokeria ja hunajaa.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<script>
+  function toggleText(btnId, textId) {
+    const btn = document.getElementById(btnId);
+    const text = document.getElementById(textId);
+    btn.addEventListener('click', () => {
+      if (text.style.display === 'none') {
+        text.style.display = 'block';
+        btn.textContent = 'Hide Info';
+      } else {
+        text.style.display = 'none';
+        btn.textContent = 'Learn More';
+      }
+    });
+  }
+
+  toggleText('showCaffeBtn', 'caffeInfo');
+  toggleText('showEspressoBtn', 'espressoInfo');
+  toggleText('showFrappuBtn', 'frappuInfo');
+  toggleText('showMochaBtn', 'mochaInfo');
+  toggleText('showCappBtn', 'cappInfo');
+  toggleText('showMatchaBtn', 'matchaInfo');
+  toggleText('showCaramelBtn', 'caramelInfo');
+  toggleText('showChaiBtn', 'chaiInfo');
+
+</script>
+
+</body>
+</html>
+
